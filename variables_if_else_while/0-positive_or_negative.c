@@ -3,9 +3,10 @@
 /* more headers goes there */
 
 /**
- *
- * Function main
- */
+*main - Determine if a number is positive or negatative
+*
+*Return: 0
+*/
 int main(void)
 {
 	int n;
