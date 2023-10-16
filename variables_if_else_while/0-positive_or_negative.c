@@ -2,7 +2,7 @@
 #include <time.h>
 /* more headers goes there */
 
-/*Program that defines n*/
+/* betty style doc for function main goes there */
 int main(void)
 {
 	int n;
