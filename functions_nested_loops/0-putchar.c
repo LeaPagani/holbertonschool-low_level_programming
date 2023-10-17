@@ -1,6 +1,5 @@
-#include <stdlib.h>
 #include <stdio.h>
-#include <time.h>
+#include "main.h"
 /* more headers goes there */
 
 /**
@@ -10,8 +9,14 @@
 */
 int main(void)
 {
-	("_putchar\n");
+	int i;
+	char text[10] = "_putchar";
+
+	for (i = 0; i < 8; i++)
+	{
+		_putchar(text[i]);
+	}
+	_putchar ('\n');
 
 	return (0);
-
 }
