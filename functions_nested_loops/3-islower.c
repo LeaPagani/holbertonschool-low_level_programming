@@ -13,7 +13,7 @@ int _islower(int c)
 	}
 	else if (c >= 'A' && c <= 'Z')
 	{
-		return (c = 1);
+		return (c = 0);
 	}
 	else
 		return (0);
