@@ -20,7 +20,7 @@ void print_to_98(int n)
 			else
 			printf("%d, ", x);
 		}
-		_putchar('\n');
+		putchar('\n');
 	}
 	else if (n < 98)
 	{
@@ -31,7 +31,7 @@ void print_to_98(int n)
 			else
 			printf("%d, ", x);
 		}
-		_putchar('\n');
+		putchar('\n');
 	}
 	else
 	{
