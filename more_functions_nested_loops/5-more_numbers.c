@@ -20,8 +20,8 @@ void more_numbers(void)
 			if (num > 9)
 			{
 				_putchar(fd + '0');
-				_putchar(ld + '0');
 			}
+			_putchar(ld + '0');
 		}
 		_putchar('\n');
 	}
