@@ -6,7 +6,7 @@
 *changing multiples of 5 to 'Buzz' and multiples of 3 to Fizz
 *Return: 0
 */
-int main (void)
+int main(void)
 {
 	int num;
 	int mult_3;
