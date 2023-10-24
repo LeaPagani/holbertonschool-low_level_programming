@@ -1,4 +1,4 @@
-/*
+*
  * File: 4-print_rev.c
  * Auth: Leandro Pagani
  */
@@ -17,9 +17,11 @@ void print_rev(char *s)
 
 	s--;
 
-	while (*s)
+	while(*s)
+	{
 		_putchar(*s);
 		s--;
+	}
 
 	_putchar('\n');
 }
