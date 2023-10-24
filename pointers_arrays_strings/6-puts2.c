@@ -7,9 +7,12 @@
 void puts2(char *str)
 {
 	if (*str)
+	{
 	_putchar(*str);
-	while (*str && *(str + 1))
-		_putchar(*(str += 2));
-
+		while (*str && *(str + 1))
+		{
+			_putchar(*(str += 2));
+		}
+	}
 	_putchar('\n');
 }
