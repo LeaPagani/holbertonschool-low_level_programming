@@ -8,7 +8,7 @@
 /**
 * _strlen - Function that returns the length of a string
 * @s: String
-* Return: 0
+* Return: length
 */
 int _strlen(char *s)
 {
