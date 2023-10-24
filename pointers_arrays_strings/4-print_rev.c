@@ -1,7 +1,7 @@
-*
- * File: 4-print_rev.c
- * Auth: Leandro Pagani
- */
+/**
+* File: 4-print_rev.c
+* Auth: Leandro Pagani
+*/
 
 #include "main.h"
 
@@ -17,7 +17,7 @@ void print_rev(char *s)
 
 	s--;
 
-	while(*s)
+	while (*s)
 	{
 		_putchar(*s);
 		s--;
