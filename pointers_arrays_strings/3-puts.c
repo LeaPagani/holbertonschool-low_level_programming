@@ -13,7 +13,7 @@
 void _puts(char *str)
 {
 	int length = 0;
-	char letter = str[length];
+	int letter = str[length];
 
 	while (str[length] != '\0')
 	{
