@@ -7,6 +7,7 @@
 void rev_string(char *s)
 {
 	char *end = s;
+
 	if (s)
 
 	while (*end)
