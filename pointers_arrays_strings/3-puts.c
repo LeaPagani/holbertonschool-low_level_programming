@@ -12,13 +12,8 @@
 */
 void _puts(char *str)
 {
-	int length = 0;
-	int letter = str[length];
+	while (*str)
+		_putchar(*str++);
 
-	while (str[length] != '\0')
-	{
-		_putchar(letter);
-		length++;
-	}
 	_putchar('\n');
 }
