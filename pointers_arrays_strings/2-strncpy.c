@@ -9,22 +9,18 @@
 */
 char *_strncpy(char *dest, char *src, int n)
 {
-	char *ogdest = dest;
+	int charcount;
 
-	if (n <= 0)
+	charcount = 0;
+	while (charcount < n && *(src + charcount))
 	{
-		return (dest);
+		*(dest + charcount) = *(src + charcount);
+		charcount++;
 	}
-
-	else
+	while (charcount < n)
 	{
-		while (*src && n > 0)
-		{
-			*dest = *src;
-			dest++;
-			src++;
-			n--;
-		}
-		return (ogdest);
+		*(dest + charcount) = '\0';
+		charcount++;
 	}
+	return (dest);
 }
