@@ -22,7 +22,6 @@ int _atoi(char *s)
 		}
 		else
 		{
-			pn *= 1;
 			pointer++;
 		}
 	}
