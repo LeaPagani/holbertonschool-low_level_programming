@@ -17,12 +17,12 @@ int _atoi(char *s)
 	{
 		if (s[pointer] == '-')
 		{
-			pn = -1;
+			pn *= -1;
 			pointer++;
 		}
 		else
 		{
-			pn = 1;
+			pn *= 1;
 			pointer++;
 		}
 	}
