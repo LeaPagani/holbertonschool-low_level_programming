@@ -7,11 +7,9 @@
 */
 int _atoi(char *s)
 {
-	int pointer, value, pn;
-
-	pointer = value = 0;
-
-	pn = 1;
+	int pointer = 0;
+	unsigned int value = 0;
+	unsigned int pn = 1;
 
 	while ((s[pointer] < '0' || s[pointer] > '9') && (s[pointer] != '\0'))
 	{
@@ -34,7 +32,6 @@ int _atoi(char *s)
 			pointer++;
 		}
 	}
-
 
 	value = value * pn;
 
