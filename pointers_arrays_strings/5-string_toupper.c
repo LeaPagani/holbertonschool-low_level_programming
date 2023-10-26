@@ -15,7 +15,7 @@ char *string_toupper(char *str)
 		{
 		*str -= 32;
 		}
-		*str++;
+		str++;
 	}
 
 	return (ogstr);
