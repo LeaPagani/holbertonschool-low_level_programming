@@ -12,7 +12,7 @@ char *cap_string(char *str)
 
 	while (*str)
 	{
-		if (*str >= 'a' && *str <= 'z' && capnext)
+		if (*str >= 'a' && *str <= 'z' && capnext == 1)
 		{
 			*str -= 32;
 			capnext = 0;
@@ -29,7 +29,6 @@ char *cap_string(char *str)
 
 		str++;
 	}
-
 
 	return (ogstr);
 }
