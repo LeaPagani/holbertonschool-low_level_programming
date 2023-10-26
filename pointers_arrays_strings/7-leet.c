@@ -7,20 +7,23 @@
 */
 char *leet(char *str)
 {
-	char *ogstr = str;
+	int charcount1, charcount2;
+	char letters[] = "aAeEoOtTlL";
+	char numbers[] = "4433007711";
 
-	while (*str)
+	charcount1 = 0;
+	while (str[charcount1])
 	{
-		while ((*str >= 'a' && *str <= 'z') ||
-			(*str >= 'A' && *str <= 'Z'))
+		charcount2 = 0;
+		while (letters[charcount2])
 		{
-			'a' && 'A' = 4
-			'e' && 'E' = 3
-			'o' && 'O' = 0
-			't' && 'T' = 7
-			'l' && 'L' = 1
+			if (str[charcount1] == letters[charcount2])
+			{
+				str[charcount1] = numbers[charcount2];
+			}
+			charcount2++;
 		}
+		charcount1++;
 	}
-
-	return (ogstr);
+	return (str);
 }
