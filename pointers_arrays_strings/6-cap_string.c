@@ -16,6 +16,7 @@ char *cap_string(char *str)
 		{
 			*str -= 32;
 			capnext = 0;
+			str++;
 		}
 
 		if (*str == ' ' || *str == '\t' || *str == '\n' ||
@@ -25,9 +26,14 @@ char *cap_string(char *str)
 			*str == '}')
 		{
 			capnext = 1;
+			str++;
 		}
 
-		str++;
+		else
+		{
+			capnext = 0;
+			str++;
+		}
 	}
 
 	return (ogstr);
