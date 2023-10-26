@@ -18,18 +18,18 @@ char *cap_string(char *str)
 			capnext = 0;
 		}
 
-	if (*str == ' ' || *str == '\t' || *str == '\n' ||
-		*str == ',' || *str == ';' || *str == '.' ||
-		*str == '!' || *str == '?' || *str == '"' ||
-		*str == '(' || *str == ')' || *str == '{' ||
-		*str == '}')
-	{
-		capnext = 1;
+		if (*str == ' ' || *str == '\t' || *str == '\n' ||
+			*str == ',' || *str == ';' || *str == '.' ||
+			*str == '!' || *str == '?' || *str == '"' ||
+			*str == '(' || *str == ')' || *str == '{' ||
+			*str == '}')
+		{
+			capnext = 1;
+		}
+
+		str++;
 	}
 
-	str++;
-	}
-	
 
 	return (ogstr);
 }
