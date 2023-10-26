@@ -8,15 +8,28 @@
 char *cap_string(char *str)
 {
 	char *ogstr = str;
+	int capnext = 1;
 
 	while (*str)
 	{
-		while (*str >= 'a' && *str <= 'z' && (*str - 1) == 32)
+		if (*str >= 'a' && *str <= 'z' && capnext)
 		{
-		*str -= 32;
+			*str -= 32;
+			capnext = 0;
 		}
-		str++;
+
+	if (*str == ' ' || *str == '\t' || *str == '\n' ||
+		*str == ',' || *str == ';' || *str == '.' ||
+		*str == '!' || *str == '?' || *str == '"' ||
+		*str == '(' || *str == ')' || *str == '{' ||
+		*str == '}')
+	{
+		capnext = 1;
 	}
+
+	str++;
+	}
+	
 
 	return (ogstr);
 }
