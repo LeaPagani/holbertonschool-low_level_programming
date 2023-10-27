@@ -1,21 +1,26 @@
 #include "main.h"
 
 /**
-* int _strspn - Function that gets the length of a prefix substring
-* @s: String
-* @c: Char to be located
-* Return: Pointer to first occurrence of c or NULL if c is not found
+* _strspn - Function that gets the length of a prefix substring
+* @s: String 1
+* @accept: String 2
+* Return: Length in number of bytes
 */
 unsigned int _strspn(char *s, char *accept)
 {
-	while (*s)
+	int bytes = 0;
+
+	while (*s && *accept)
 	{
-		if ([*s] == c)
-				return (s);
-	{
+		if (*s == *accept)
+		{
+			bytes++;
+			s++;
+		}
 		else
-	{
-			*s++;
+		{
+			accept++;
+		}
 	}
-	return ('\0');
+	return (bytes);
 }
