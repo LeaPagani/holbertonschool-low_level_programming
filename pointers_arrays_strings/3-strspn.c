@@ -8,19 +8,31 @@
 */
 unsigned int _strspn(char *s, char *accept)
 {
-	int bytes = 0;
+    unsigned int bytes = 0;
 
-	while (*s && *accept)
+	while (*s)
 	{
-		if (*s == *accept)
+		char *temp = accept;
+		int found = 0;
+
+		while (*temp)
+		{
+			if (*s == *temp)
+			{
+				found = 1;
+				break;
+			}
+			temp++;
+		}
+		if (found)
 		{
 			bytes++;
 			s++;
 		}
 		else
 		{
-			accept++;
+		break;
 		}
 	}
-	return (bytes);
+	return bytes;
 }
