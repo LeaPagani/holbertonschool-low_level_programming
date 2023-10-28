@@ -31,9 +31,9 @@ unsigned int _strspn(char *s, char *accept)
 		}
 		if (charAccepted == 0)
 		{
-			return acceptedChars;
+			return (acceptedChars);
 		}
 		strIndex++;
 	}
-	return acceptedChars;
+	return (acceptedChars);
 }
