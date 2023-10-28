@@ -8,31 +8,32 @@
 */
 unsigned int _strspn(char *s, char *accept)
 {
-    unsigned int bytes = 0;
+	unsigned int strIndex = 0;
+	unsigned int acceptedChars = 0;
 
-	while (*s)
+	while (s[strIndex] != '\0')
 	{
-		char *temp = accept;
-		int found = 0;
+		unsigned int acceptIndex = 0;
+		unsigned int charAccepted = 0;
 
-		while (*temp)
+		while (accept[acceptIndex] != '\0')
 		{
-			if (*s == *temp)
+			if (s[strIndex] != accept[acceptIndex])
 			{
-				found = 1;
-				break;
+				acceptIndex++;
 			}
-			temp++;
+			else if (s[strIndex] == accept[acceptIndex])
+			{
+				charAccepted = 1;
+				acceptedChars++;
+				acceptIndex++;
+			}
 		}
-		if (found)
+		if (charAccepted == 0)
 		{
-			bytes++;
-			s++;
+			return acceptedChars;
 		}
-		else
-		{
-		break;
-		}
+		strIndex++;
 	}
-	return bytes;
+	return acceptedChars;
 }
