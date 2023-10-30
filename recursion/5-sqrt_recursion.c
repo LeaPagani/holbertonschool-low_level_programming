@@ -16,8 +16,8 @@ int _sqrt_recursion(int n)
 
 /**
  * real_sqrt_recursion - Find the square root of a number
- * @n: number to calculate the sqaure root of
- * @i: iterator
+ * @n: Number to calculate the square root of
+ * @i: Iterator
  * Return: Square root
  */
 int real_sqrt_recursion(int n, int i)
