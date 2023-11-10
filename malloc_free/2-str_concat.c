@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
-* _strdup - Concatenate two strings with allocated memory
+* str_concat - Concatenate two strings with allocated memory
 * @s1: String 1
 * @s2: String 2
 * Return: Duplicated array or NULL
@@ -29,7 +29,7 @@ char *str_concat(char *s1, char *s2)
 	concatenated = (char *)malloc((len1 + len2 + 1) * sizeof(char));
 
 	if (concatenated == NULL)
-        return (NULL);
+		return (NULL);
 
 	for (i = 0; i < len1; i++)
 		concatenated[i] = s1[i];
@@ -38,7 +38,7 @@ char *str_concat(char *s1, char *s2)
 	{
 		concatenated[i] = s2[i2];
 		i++;
-    }
+	}
 
 	concatenated[len1 + len2] = '\0';
 
