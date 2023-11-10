@@ -2,10 +2,9 @@
 #include <stdlib.h>
 
 /**
-* create_array - Function creates array of chars with a specific char
-* @size: Size of the array
-* @c: Specified char
-* Return: Array or NULL
+* _strdup - Dupliate string with allocated memory
+* @str: Original string
+* Return: Duplicated array or NULL
 */
 char *_strdup(char *str)
 {
