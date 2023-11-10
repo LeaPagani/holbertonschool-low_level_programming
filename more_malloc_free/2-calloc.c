@@ -2,9 +2,10 @@
 #include <stdlib.h>
 
 /**
-* malloc_checked - Function that allocates memory using malloc
-* @b: int
-* Return: 0
+* _calloc - Function that allocates memory using malloc
+* @nmemb: int
+* @size: Type of data
+* Return: Pointer to allocated memory
 */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
